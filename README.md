@@ -49,19 +49,37 @@ Usage and Deployment
   
 Getting Started
 
-	•	Clone this repository.
-	•	Install requirements:  pip install -r requirements.txt 
-  • Create and activate a virtual environment (optional but recommended)
-    python -m venv venv
-    # On Windows
-    venv\Scripts\activate
-    # On macOS/Linux
-    source venv/bin/activate
+	## Installation and Running Guide
 
-  •  Set up MLflow tracking URI (if using local tracking)
-      import mlflow
-      mlflow.set_tracking_uri("file:///absolute/path/to/mlruns")
+- Clone this repository:
 
-  •  streamlit run app.py
+
+- Install requirements:
+
+pip install -r requirements.txt
+
+- Create and activate a virtual environment (optional but recommended):
+
+python -m venv venv
+
+- On Windows:
+
+  ```
+  venv\Scripts\activate
+  ```
+
+- On macOS/Linux:
+
+  ```
+  source venv/bin/activate
+  ```
+
+- Set up MLflow tracking URI (if using local tracking):
+
+import mlflow mlflow.set_tracking_uri(“file:///absolute/path/to/mlruns”)
+
+- Run the Streamlit application:
+
+streamlit run app.py
   
   
